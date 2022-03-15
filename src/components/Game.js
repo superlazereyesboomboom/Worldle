@@ -1,11 +1,22 @@
-import Keyboard from "./keyBoard";
+import Header from "./Header";
+import Grid from "./Grid";
+import "./Game.css"
 
 export default function Home() {
 return(
 <div className = "Worldle">
-<div className = "keyboard">
-<Keyboard/>
+<body>
+
+<div className = "Header">
+<Header/>
 </div>
+
+<div className = "Grid">
+<Grid/>
+</div>
+
+</body>
+
 </div>
 )
 }

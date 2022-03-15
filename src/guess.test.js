@@ -12,14 +12,14 @@ test("returns 'You Win!' when the last guess is equal to the word & counter is 5
   expect(evaluateGuess(code, guesses, guessCounter)).toBe("You Win!");
 });
 
-/*
+
 test("returns 'Not a Word' when the guess is not in the word bank. Does not add a guess to the counter", () => {
   const code = ['R','E', 'A', 'C','T'];
   const guesses = ['R','E', 'A', 'N','T']
   const guessCounter = 3;
   expect(evaluateGuess(code, guesses, guessCounter)).toBe("Not a Word");
 });
-*/
+
 test("returns 'You Lose' when the guess is not equal to the word and the counter is 5", () => {
   const code = ['R','E', 'A', 'C','T'];
   const guesses = ['S','H', 'A', 'L','E']
